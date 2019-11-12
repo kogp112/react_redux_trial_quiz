@@ -6,9 +6,9 @@ const answer = (state = [], action) => {
         {
           input: action.answer
         }
-			]
+      ]
     default:
-			return state
+      return state
   }
 }
 
