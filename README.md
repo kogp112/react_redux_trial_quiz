@@ -1,4 +1,4 @@
-# Redux Trial - English quiz
+# Redux Trial app - English quiz
 
 This is simple quiz app made by React&Redux
 
