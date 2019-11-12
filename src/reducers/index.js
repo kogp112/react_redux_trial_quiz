@@ -3,6 +3,6 @@ import answer from './answer'
 import quiz from './quiz'
 
 export default combineReducers({
-	answer,
-	quiz
+  answer,
+  quiz
 })

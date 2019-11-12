@@ -3,24 +3,23 @@ import { connect } from 'react-redux'
 import { checkAnswer } from '../actions'
 
 const InputAnswer = ({ dispatch }) => {
-	let input
-  
-	return (
-		<div>
-			<form 
-				onSubmit={e => {
-					e.preventDefault()
-					if (!input.value.trim()) {
-						return
-					}
-					dispatch(checkAnswer(input.value))
-					input.value = ''
-				}}>
-				<input ref={node => (input = node)} />
-				<button type="submit">submit answer</button>
-			</form>
-		</div>
-	)
+  let input
+  return (
+    <div>
+      <form 
+        onSubmit={e => {
+          e.preventDefault()
+          if (!input.value.trim()) {
+            return
+          }
+          dispatch(checkAnswer(input.value))
+          input.value = ''
+        }}>
+        <input ref={node => (input = node)} />
+        <button type="submit">submit answer</button>
+      </form>
+    </div>
+  )
 }
 
 export default connect()(InputAnswer)

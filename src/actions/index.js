@@ -1,13 +1,13 @@
 export const checkAnswer = (answer) => ({
-	type: 'CHECK_ANSWER',
-	answer
+  type: 'CHECK_ANSWER',
+  answer
 })
 
 export const showResult = result => ({
-	result
+  result
 })
 
 export const randomQuiz = (quiz) => ({
-	type: 'SHOW_QUIZ',
-	quiz
+  type: 'SHOW_QUIZ',
+  quiz
 }) 
