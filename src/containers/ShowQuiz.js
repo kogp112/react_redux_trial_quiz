@@ -6,7 +6,7 @@ class ShowQuiz extends React.Component {
   componentDidMount() {
     const { dispatch } = this.props
     dispatch(randomQuiz())
-	}
+  }
   render() {
     const { quiz } = this.props
     if (quiz.length > 0) {
